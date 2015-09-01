@@ -1,4 +1,4 @@
-DOTFILES = .vimrc .zshrc
+DOTFILES = .vimrc .zshrc .jshintrc
 
 deploy:
 	@echo 'Copyright (c) 2013-2015 nerd0geek1 All Rights Reserved.'

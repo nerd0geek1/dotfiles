@@ -1,0 +1,19 @@
+{
+  /*
+   * Enforcing options
+   * これらにtrueを設定することで、JSHintはより厳しく警告を出すようになる。
+   */
+  // 変数名をキャメルケース、または大文字のアンダースコア区切りに限定する
+  "camelcase": true,
+    // 全ての関数に対して、ECMAScript 5のstrict modeを求める。
+    "strict": true,
+    // 行末のホワイトスペースを許さない。
+
+    "trailing": true,
+    /*
+     * Relaxing options
+     * trueをセットした項目について、JSHintが警告を出さなくなる。
+     */
+    // ECMAScript 6独自シンタックスが使えるようになる
+    "esnext": true
+}
