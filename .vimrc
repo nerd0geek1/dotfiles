@@ -66,7 +66,7 @@ NeoBundle 'mattn/emmet-vim'
 " Railsのプラグイン(View<-->Controller、model<-->Schema、Test<-->Helperの移動が簡単になる)
 " NeoBundle 'tpope/vim-rails'
 " Rails/sinatra/rspec等の補完を行う
-NeoBundle 'vim-ruby/vim-ruby'
+" NeoBundle 'vim-ruby/vim-ruby'
 " slimの補完を行う
 NeoBundle 'slim-template/vim-slim'
 "NeoBundle 'Shougo/neosnippet'
@@ -78,11 +78,18 @@ NeoBundle 'slim-template/vim-slim'
 "-------------------------------------
 "Gemfileに対してrubyのfiletypeを適用
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
+" vim-slim
+autocmd BufNewFile,BufRead *.slim set filetype=slim
 
+"------------------
+" Key Binding
+"------------------
 "NERDTreeのKey bindを定義
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
 
+"------------------
 " neocomplete.vim
+"------------------
 " AutoComplPopを無効化
 let g:acp_enableAtStartup = 1
 " NeoCompleteを有効にする
@@ -90,8 +97,12 @@ let g:neocomplete#enable_at_startup = 1
 " 大文字入力まで大文字小文字の区別を無視
 let g:neocomplete#enable_smart_case = 1
 
-" vim-slim
-autocmd BufNewFile,BufRead *.slim set filetype=slim
+"------------------
+" syntastic
+"------------------
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['ruby', 'javascript'] }
+let g:syntastic_ruby_checkers = ['rubocop']
+let g:syntastic_javascript_checkers = ['jshint']
 
 filetype plugin indent on
 
