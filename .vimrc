@@ -97,6 +97,9 @@ let g:neocomplete#enable_at_startup = 1
 " 大文字入力まで大文字小文字の区別を無視
 let g:neocomplete#enable_smart_case = 1
 
+" tabで補完の切替
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
 "------------------
 " syntastic
 "------------------
