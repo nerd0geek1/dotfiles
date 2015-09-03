@@ -45,6 +45,8 @@ NeoBundle 'Yggdroot/indentLine'
 NeoBundle 'bronson/vim-trailing-whitespace'
 " コメントアウトの切替簡略化
 NeoBundle 'tomtom/tcomment_vim'
+" コード片の実行
+NeoBundle "thinca/vim-quickrun"
 "------------------
 " HTML, CSS, js
 "------------------
