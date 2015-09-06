@@ -101,6 +101,10 @@ let g:neocomplete#enable_smart_case = 1
 
 " tabで補完の切替
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+" 補完候補の選択(改行なし)
+inoremap <expr><C-d> neocomplete#close_popup()
+" ポップアップをキャンセル
+inoremap <expr><C-c>  neocomplete#cancel_popup()
 
 "------------------
 " syntastic
