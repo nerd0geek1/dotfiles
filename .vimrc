@@ -56,8 +56,10 @@ NeoBundle 'mattn/emmet-vim'
 " NeoBundle 'othree/html5.vim'
 " CSS3の補完
 " NeoBundle 'hail2u/vim-css3-syntax'
-" javascriptの補完
+" Javascriptのsyntax, indentを追加(es6を扱う際はoffにする(arrow構文のインデントが深くなってしまうため))
 " NeoBundle 'pangloss/vim-javascript'
+" ECMAScript6のsyntax, indentを追加
+NeoBundle 'vim-es6'
 "------------------
 " Node.js
 "------------------
