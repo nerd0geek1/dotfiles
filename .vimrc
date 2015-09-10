@@ -37,8 +37,6 @@ NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'scrooloose/nerdtree'
 " syntax checkを行う
 NeoBundle 'scrooloose/syntastic'
-" 自動補完を行う
-NeoBundle 'Shougo/neocomplete.vim'
 " インデントのハイライト
 NeoBundle 'Yggdroot/indentLine'
 " 文末の空白を可視化
@@ -47,6 +45,17 @@ NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'tomtom/tcomment_vim'
 " コード片の実行
 NeoBundle "thinca/vim-quickrun"
+" 自動補完
+function! s:meet_neocomplete_requirements()
+  return has('lua') && (v:version > 703 || (v:version == 703 && has('patch885')))
+endfunction
+if s:meet_neocomplete_requirements()
+  NeoBundle 'Shougo/neocomplete.vim'
+  NeoBundleFetch 'Shougo/neocomplcache.vim'
+else
+  NeoBundleFetch 'Shougo/neocomplete.vim'
+  NeoBundle 'Shougo/neocomplcache.vim'
+endif
 "------------------
 " HTML, CSS, js
 "------------------
@@ -80,10 +89,12 @@ NeoBundle 'slim-template/vim-slim'
 "-------------------------------------
 " プラグイン設定
 "-------------------------------------
-"Gemfileに対してrubyのfiletypeを適用
+" Gemfileに対してrubyのfiletypeを適用
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
 " vim-slim
 autocmd BufNewFile,BufRead *.slim set filetype=slim
+" vue.jsのcomponentが適切にハイライトされるように設定
+autocmd BufNewFile,BufRead *.{html,htm,vue*} set filetype=html
 
 "------------------
 " Key Binding
@@ -94,19 +105,21 @@ nnoremap <silent><C-e> :NERDTreeToggle<CR>
 "------------------
 " neocomplete.vim
 "------------------
-" AutoComplPopを無効化
-let g:acp_enableAtStartup = 1
-" NeoCompleteを有効にする
-let g:neocomplete#enable_at_startup = 1
-" 大文字入力まで大文字小文字の区別を無視
-let g:neocomplete#enable_smart_case = 1
+if s:meet_neocomplete_requirements()
+  " AutoComplPopを無効化
+  let g:acp_enableAtStartup = 1
+  " NeoCompleteを有効にする
+  let g:neocomplete#enable_at_startup = 1
+  " 大文字入力まで大文字小文字の区別を無視
+  let g:neocomplete#enable_smart_case = 1
 
-" tabで補完の切替
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-" 補完候補の選択(改行なし)
-inoremap <expr><C-d> neocomplete#close_popup()
-" ポップアップをキャンセル
-inoremap <expr><C-c>  neocomplete#cancel_popup()
+  " tabで補完の切替
+  inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+  " 補完候補の選択(改行なし)
+  inoremap <expr><C-d> neocomplete#close_popup()
+  " ポップアップをキャンセル
+  inoremap <expr><C-c>  neocomplete#cancel_popup()
+endif
 
 "------------------
 " syntastic
