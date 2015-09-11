@@ -1,6 +1,6 @@
 [core]
 	editor = /usr/bin/vim
-
+  excludesfile = ~/.gitignore
 [alias]
   b = branch -a
   cb = !git branch --merged origin/develop | egrep -v 'master|develop' | xargs git branch -d
