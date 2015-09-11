@@ -1,0 +1,17 @@
+[core]
+	editor = /usr/bin/vim
+
+[alias]
+  b = branch -a
+  cb = !git branch --merged origin/develop | egrep -v 'master|develop' | xargs git branch -d
+  co = checkout
+  f = fetch --prune
+  st = status
+  rc = rebase --continue
+
+[user]
+	name = Kohei Tabata
+	email = nerd0geek1@gmail.com
+[merge "mergepbx"]
+	name = Xcode project files merger
+	driver = mergepbx %O %A %B
