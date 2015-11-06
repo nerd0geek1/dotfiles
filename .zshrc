@@ -79,6 +79,7 @@ alias vi="vim"
 
 # gitを短縮して呼び出す
 alias g="git"
+alias gst="git status"
 
 # -------------------------------------
 # キーバインド
