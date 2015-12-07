@@ -23,7 +23,7 @@ if has('vim_starting')
 endif
 
 " 以下の関数では、NeoBundleの初期化を行っている。
-call neobundle#rc(expand('~/.vim/bundle/'))
+call neobundle#begin(expand('~/.vim/bundle/'))
 
 
 "-------------------------------------
@@ -85,6 +85,7 @@ NeoBundle 'slim-template/vim-slim'
 "NeoBundle 'Shougo/neosnippet'
 "NeoBundle 'Shougo/neosnippet-snippets'
 
+call neobundle#end()
 
 "-------------------------------------
 " プラグイン設定
