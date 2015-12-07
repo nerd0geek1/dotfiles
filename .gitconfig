@@ -8,6 +8,7 @@
   f = fetch --prune
   st = status
   rc = rebase --continue
+  rsth = reset --hard
 
 [user]
 	name = Kohei Tabata
