@@ -90,8 +90,9 @@ call neobundle#end()
 "-------------------------------------
 " プラグイン設定
 "-------------------------------------
-" Gemfileに対してrubyのfiletypeを適用
+" Gemfile, Podfileに対してrubyのfiletypeを適用
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
+autocmd BufNewFile,BufRead Podfile set filetype=ruby
 " vim-slim
 autocmd BufNewFile,BufRead *.slim set filetype=slim
 " vue.jsのcomponentが適切にハイライトされるように設定
