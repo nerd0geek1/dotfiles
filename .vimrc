@@ -90,9 +90,10 @@ call neobundle#end()
 "-------------------------------------
 " プラグイン設定
 "-------------------------------------
-" Gemfile, Podfile, Fastfileに対してrubyのfiletypeを適用
+" Gemfile, Podfile, AppFile, Fastfileに対してrubyのfiletypeを適用
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
 autocmd BufNewFile,BufRead Podfile set filetype=ruby
+autocmd BufNewFile,BufRead AppFile set filetype=ruby
 autocmd BufNewFile,BufRead Fastfile set filetype=ruby
 " vim-slim
 autocmd BufNewFile,BufRead *.slim set filetype=slim
