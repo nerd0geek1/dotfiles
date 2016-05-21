@@ -1,8 +1,5 @@
 # dotfiles
 
-## TODO
-- [ ] add command to install used homebrew package
-
 ## Apps should be installed
 - [Xcode]()
 - [Charles](https://www.charlesproxy.com/download/)
