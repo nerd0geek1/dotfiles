@@ -12,12 +12,6 @@ eval "$(rbenv init -)"
 # node.js
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
-#Android
-export PATH="$HOME/Library/Android/sdk/build-tools/21.1.1/:$PATH"
-export PATH="$HOME/Library/Android/sdk/tools/:$PATH"
-export PATH="$HOME/Library/Android/sdk/platform-tools/:$PATH"
-export ANDROID_HOME="$HOME/Library/Android/sdk"
-
 #Xcode
 # export PATH="/Applications/Xcode.app/Contents/SharedFrameworks/DTDeviceKitBase.framework/Versions/A/Resources/:$PATH"
 # export DEVELOPER_DIR="/Applications/Xcode.app/Contents/Developer/:$PATH"
