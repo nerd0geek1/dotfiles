@@ -1,6 +1,6 @@
+DOTPATH			      := $(realpath $(dir $(lastword $(MAKEFILE_LIST))))
 DOTFILES_EXCLUDES := .DS_Store .git .gitmodules .travis.yml
 DOTFILES_TARGET   := $(wildcard .??*) bin
-DOTFILES_DIR      := $(PWD)
 DOTFILES_FILES    := $(filter-out $(DOTFILES_EXCLUDES), $(DOTFILES_TARGET))
 
 deploy:
@@ -8,3 +8,6 @@ deploy:
 	@echo '==> Start to deploy dotfiles to home directory.'
 	@echo ''
 	@$(foreach val, $(DOTFILES_FILES), ln -sfnv $(abspath $(val)) $(HOME)/$(val);)
+
+init:
+	@DOTPATH=$(DOTPATH) bash $(DOTPATH)/etc/init/init.sh

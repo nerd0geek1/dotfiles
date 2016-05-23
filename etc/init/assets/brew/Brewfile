@@ -1,6 +1,7 @@
 brew 'gibo'
 brew 'git'
 brew 'rbenv'
+brew 'ruby-build'
 brew 'swiftlint'
 brew 'tig'
 brew 'vim'
