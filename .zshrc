@@ -6,8 +6,10 @@
 typeset -U path PATH
 
 # ruby
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+if [ -e $HOME/.rbenv ]; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
+fi
 
 # node.js
 export PATH=$HOME/.nodebrew/current/bin:$PATH

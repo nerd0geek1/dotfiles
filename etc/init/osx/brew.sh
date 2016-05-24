@@ -30,4 +30,6 @@ brew bundle
 
 brew cleanup
 
+. "$DOTPATH"/etc/init/osx/rbenv.sh
+
 log_pass "brew: installed successfully"
