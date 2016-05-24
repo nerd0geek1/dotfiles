@@ -1,3 +1,4 @@
+brew 'carthage'
 brew 'gibo'
 brew 'git'
 brew 'rbenv'
