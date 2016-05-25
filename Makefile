@@ -10,4 +10,4 @@ deploy:
 	@$(foreach val, $(DOTFILES_FILES), ln -sfnv $(abspath $(val)) $(HOME)/$(val);)
 
 init:
-	@DOTPATH=$(DOTPATH) bash $(DOTPATH)/etc/init/init.sh
+	@DOTPATH=$(DOTPATH) zsh $(DOTPATH)/etc/init/init.sh
