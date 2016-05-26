@@ -87,5 +87,3 @@ bindkey ";5C" forward-word
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-### gitをcommand line toolからhomebrewのものに変更するため
-export PATH=/usr/local/bin:$PATH
