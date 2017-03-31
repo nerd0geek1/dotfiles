@@ -80,6 +80,10 @@ alias vi="vim"
 alias g="git"
 alias gst="git status"
 
+# bundler関連
+alias bi="bundle install"
+alias be="bundle exec"
+
 # -------------------------------------
 # キーバインド
 # -------------------------------------
