@@ -11,6 +11,8 @@ if [ -e $HOME/.rbenv ]; then
   eval "$(rbenv init -)"
 fi
 
+export PATH="$HOME/.nodebrew/current/bin:$PATH"
+
 #Xcode
 # export PATH="/Applications/Xcode.app/Contents/SharedFrameworks/DTDeviceKitBase.framework/Versions/A/Resources/:$PATH"
 # export DEVELOPER_DIR="/Applications/Xcode.app/Contents/Developer/:$PATH"
