@@ -11,7 +11,11 @@ if [ -e $HOME/.rbenv ]; then
   eval "$(rbenv init -)"
 fi
 
+# node
 export PATH="$HOME/.nodebrew/current/bin:$PATH"
+
+# Android Studio
+export ANDROID_HOME="/Users/tabatakohei/Library/Android/sdk/"
 
 #Xcode
 # export PATH="/Applications/Xcode.app/Contents/SharedFrameworks/DTDeviceKitBase.framework/Versions/A/Resources/:$PATH"
