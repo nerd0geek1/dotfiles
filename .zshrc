@@ -88,6 +88,9 @@ alias gst="git status"
 alias bi="bundle install --path vendor/bundle"
 alias be="bundle exec"
 
+# terminal-notifier(通知カスタマイズ)
+alias notify="terminal-notifier -message '処理終わったよ'"
+
 # -------------------------------------
 # キーバインド
 # -------------------------------------
