@@ -16,6 +16,7 @@ export PATH="$HOME/.nodebrew/current/bin:$PATH"
 
 # Android Studio
 export ANDROID_HOME="/Users/tabatakohei/Library/Android/sdk/"
+export PATH="/Users/tabatakohei/Library/Android/sdk/platform-tools:$PATH"
 
 #Xcode
 # export PATH="/Applications/Xcode.app/Contents/SharedFrameworks/DTDeviceKitBase.framework/Versions/A/Resources/:$PATH"
