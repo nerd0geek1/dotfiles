@@ -11,8 +11,10 @@ if [ -e $HOME/.rbenv ]; then
   eval "$(rbenv init -)"
 fi
 
-# node
-export PATH="$HOME/.nodebrew/current/bin:$PATH"
+# Node.js
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Android Studio
 export ANDROID_HOME="/Users/tabatakohei/Library/Android/sdk/"
