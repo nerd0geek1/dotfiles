@@ -24,6 +24,9 @@ export PATH="/Users/tabatakohei/Library/Android/sdk/platform-tools:$PATH"
 export LC_ALL=en_US.UTF-8
 export LC_NUMERIC=ja_US
 
+# Flutter
+export PATH="$HOME/Flutter_development/bin:$PATH"
+
 #Xcode
 # export PATH="/Applications/Xcode.app/Contents/SharedFrameworks/DTDeviceKitBase.framework/Versions/A/Resources/:$PATH"
 # export DEVELOPER_DIR="/Applications/Xcode.app/Contents/Developer/:$PATH"
