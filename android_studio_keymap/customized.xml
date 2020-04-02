@@ -1,2 +1,8 @@
 <keymap version="1" name="customized" parent="Mac OS X 10.5+">
+  <action id="SearchEverywhere.NavigateToPrevGroup">
+    <keyboard-shortcut first-keystroke="page_up" />
+  </action>
+  <action id="ShowNavBar">
+    <keyboard-shortcut first-keystroke="alt home" />
+  </action>
 </keymap>
