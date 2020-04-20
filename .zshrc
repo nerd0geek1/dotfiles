@@ -13,6 +13,9 @@ fi
 
 eval "$(pyenv init -)"
 
+# git(Homebrew)
+export PATH="usr/local/bin/git:$PATH"
+
 # Node.js
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
