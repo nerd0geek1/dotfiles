@@ -25,6 +25,10 @@ export NVM_DIR="$HOME/.nvm"
 export ANDROID_HOME="/Users/tabatakohei/Library/Android/sdk/"
 export PATH="/Users/tabatakohei/Library/Android/sdk/platform-tools:$PATH"
 
+# JDK
+export JAVA_HOME=/Applications/Android\ Studio.app/Contents/jre/jdk/Contents/Home
+export PATH=$PATH:/Applications/Android\ Studio.app/Contents/jre/jdk/Contents/Home/bin
+
 # inhibit vim warnings
 export LC_ALL=en_US.UTF-8
 export LC_NUMERIC=ja_US
