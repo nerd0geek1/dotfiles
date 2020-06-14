@@ -40,6 +40,10 @@ export PATH="$HOME/Flutter_development/bin:$PATH"
 # export PATH="/Applications/Xcode.app/Contents/SharedFrameworks/DTDeviceKitBase.framework/Versions/A/Resources/:$PATH"
 # export DEVELOPER_DIR="/Applications/Xcode.app/Contents/Developer/:$PATH"
 
+# Mint
+export MINT_PATH=./mint/lib
+export MINT_LINK_PATH=./mint/bin
+
 #-------------------------------------
 # zshのオプション
 # -------------------------------------
