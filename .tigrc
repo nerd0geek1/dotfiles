@@ -1,1 +1,4 @@
 set status-show-untracked-files = yes
+
+color date 123 default
+color graph-commit 123 default
