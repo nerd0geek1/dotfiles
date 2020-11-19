@@ -16,10 +16,8 @@ eval "$(pyenv init -)"
 # git(Homebrew)
 export PATH="usr/local/bin/git:$PATH"
 
-# Node.js
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# nodebrew
+export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # Android Studio
 export ANDROID_HOME="/Users/tabatakohei/Library/Android/sdk/"
