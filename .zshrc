@@ -33,6 +33,7 @@ export LC_NUMERIC=ja_US
 
 # Flutter
 export PATH="$HOME/Flutter_development/bin:$PATH"
+export FLUTTER_ROOT="$HOME/Flutter_development/bin:"
 
 #Xcode
 # export PATH="/Applications/Xcode.app/Contents/SharedFrameworks/DTDeviceKitBase.framework/Versions/A/Resources/:$PATH"
