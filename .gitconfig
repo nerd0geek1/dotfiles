@@ -9,6 +9,7 @@
   st = status
   rc = rebase --continue
   rsth = reset --hard
+  loglist = log --pretty=oneline
 
 [user]
 	name = Kohei Tabata
