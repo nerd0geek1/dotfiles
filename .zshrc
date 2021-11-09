@@ -20,8 +20,8 @@ export PATH="usr/local/bin/git:$PATH"
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # Android Studio
-export ANDROID_HOME="/Users/tabatakohei/Library/Android/sdk/"
-export PATH="/Users/tabatakohei/Library/Android/sdk/platform-tools:$PATH"
+export ANDROID_HOME="$HOME/Library/Android/sdk/"
+export PATH="/$HOME/Library/Android/sdk/platform-tools:$PATH"
 
 # JDK
 export JAVA_HOME=/Applications/Android\ Studio.app/Contents/jre/jdk/Contents/Home
