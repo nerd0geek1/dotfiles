@@ -31,11 +31,8 @@ export PATH=$PATH:/Applications/Android\ Studio.app/Contents/jre/jdk/Contents/Ho
 export LC_ALL=en_US.UTF-8
 export LC_NUMERIC=ja_US
 
-# Flutter
-export PATH="$HOME/Flutter_development/bin:$PATH"
-export FLUTTER_ROOT="$HOME/Flutter_development/bin:"
-# FVM
-export PATH="$PATH":"$HOME/.pub-cache/bin"
+# asdf
+. /usr/local/opt/asdf/libexec/asdf.sh
 
 #Xcode
 # export PATH="/Applications/Xcode.app/Contents/SharedFrameworks/DTDeviceKitBase.framework/Versions/A/Resources/:$PATH"
@@ -134,3 +131,4 @@ if [ -f '/Users/tabatakohei/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/tab
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/tabatakohei/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/tabatakohei/google-cloud-sdk/completion.zsh.inc'; fi
+
