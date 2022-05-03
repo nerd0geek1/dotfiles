@@ -72,6 +72,20 @@ function precmd ()
     echo '\n\n'$pwd
 }
 
+# firebaseコマンド実行時に、現在ログイン中のアカウントを意識させるために、firebase login:listを呼ぶ
+function firebase () {
+  echo "CAUTION!!! The current login account is as below."
+  echo "\n\n\n\n\n"
+  echo "==========================================="
+
+  /usr/local/bin/firebase login:list
+
+  echo "==========================================="
+  echo "\n\n\n\n\n"
+
+  /usr/local/bin/firebase $@
+}
+
 # 重複を記録しない
 setopt hist_ignore_dups
 
