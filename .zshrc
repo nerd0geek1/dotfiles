@@ -31,8 +31,12 @@ export PATH=$PATH:/Applications/Android\ Studio.app/Contents/jre/jdk/Contents/Ho
 export LC_ALL=en_US.UTF-8
 export LC_NUMERIC=ja_US
 
-# asdf
-. /usr/local/opt/asdf/libexec/asdf.sh
+# Flutter
+export PATH="$HOME/Flutter_development/bin:$PATH"
+export FLUTTER_ROOT="$HOME/Flutter_development/bin:"
+
+# FVM
+export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 #Xcode
 # export PATH="/Applications/Xcode.app/Contents/SharedFrameworks/DTDeviceKitBase.framework/Versions/A/Resources/:$PATH"
