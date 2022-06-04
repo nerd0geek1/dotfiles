@@ -32,8 +32,8 @@ export LC_ALL=en_US.UTF-8
 export LC_NUMERIC=ja_US
 
 # Flutter
-export PATH="$HOME/Flutter_development/bin:$PATH"
-export FLUTTER_ROOT="$HOME/Flutter_development/bin:"
+export PATH="$HOME/fvm/default/bin:$PATH"
+export FLUTTER_ROOT="$HOME/fvm/default/bin:"
 
 # FVM
 export PATH="$PATH":"$HOME/.pub-cache/bin"
@@ -126,6 +126,9 @@ alias gst="git status"
 # bundler関連
 alias bi="bundle install --path vendor/bundle"
 alias be="bundle exec"
+
+# Flutter関連
+alias flutter="fvm flutter"
 
 # terminal-notifier(通知カスタマイズ)
 alias notify="terminal-notifier -message '処理終わったよ'"
