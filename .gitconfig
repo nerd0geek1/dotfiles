@@ -3,7 +3,7 @@
   excludesfile = ~/.gitignore
 [alias]
   b = branch -a
-  cb = !git branch --merged origin/develop | egrep -v 'master|develop' | xargs git branch -d
+  cb = !git branch --merged origin/develop | egrep -v 'main|develop' | xargs git branch -d
   co = checkout
   f = fetch --prune
   st = status
