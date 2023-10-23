@@ -11,7 +11,9 @@ if [ -e $HOME/.rbenv ]; then
   eval "$(rbenv init -)"
 fi
 
-eval "$(pyenv init -)"
+if [ -e $HOME/.pyenv ]; then
+  eval "$(pyenv init -)"
+fi
 
 # git(Homebrew)
 export PATH="usr/local/bin/git:$PATH"
@@ -33,7 +35,7 @@ export LC_NUMERIC=ja_US
 
 # Flutter
 export PATH="$HOME/fvm/default/bin:$PATH"
-export FLUTTER_ROOT="$HOME/fvm/default/bin:"
+export FLUTTER_ROOT="$HOME/fvm/default/bin/flutter:"
 
 # FVM
 export PATH="$PATH":"$HOME/.pub-cache/bin"
