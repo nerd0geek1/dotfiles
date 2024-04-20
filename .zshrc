@@ -16,6 +16,7 @@ if [ -e $HOME/.pyenv ]; then
 fi
 
 # git(Homebrew)
+export PATH="/opt/homebrew/bin:$PATH"
 export PATH="usr/local/bin/git:$PATH"
 
 # nodebrew
