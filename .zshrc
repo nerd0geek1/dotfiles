@@ -27,8 +27,8 @@ export ANDROID_HOME="$HOME/Library/Android/sdk/"
 export PATH="/$HOME/Library/Android/sdk/platform-tools:$PATH"
 
 # JDK
-export JAVA_HOME=/Applications/Android\ Studio.app/Contents/jre/jdk/Contents/Home
-export PATH=$PATH:/Applications/Android\ Studio.app/Contents/jre/jdk/Contents/Home/bin
+export JAVA_HOME=$(/usr/libexec/java_home -v 17)
+export PATH=$JAVA_HOME/bin:$PATH
 
 # inhibit vim warnings
 export LC_ALL=en_US.UTF-8
