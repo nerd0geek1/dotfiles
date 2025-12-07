@@ -113,7 +113,7 @@ alias g="git"
 alias gst="git status"
 
 # bundler関連
-alias bi="bundle install --path vendor/bundle"
+alias bi="bundle config set path 'vendor/bundle' && bundle install"
 alias be="bundle exec"
 
 # Flutter関連
