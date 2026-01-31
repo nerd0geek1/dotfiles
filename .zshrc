@@ -22,10 +22,6 @@ export PATH="usr/local/bin/git:$PATH"
 # nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
-# Android Studio
-export ANDROID_HOME="$HOME/Library/Android/sdk/"
-export PATH="/$HOME/Library/Android/sdk/platform-tools:$PATH"
-
 # JDK
 export JAVA_HOME=$(/usr/libexec/java_home -v 17)
 export PATH=$JAVA_HOME/bin:$PATH
@@ -40,10 +36,6 @@ export FLUTTER_ROOT="$HOME/fvm/default/bin/flutter:"
 
 # FVM
 export PATH="$PATH":"$HOME/.pub-cache/bin"
-
-#Xcode
-# export PATH="/Applications/Xcode.app/Contents/SharedFrameworks/DTDeviceKitBase.framework/Versions/A/Resources/:$PATH"
-# export DEVELOPER_DIR="/Applications/Xcode.app/Contents/Developer/:$PATH"
 
 # Mint
 export MINT_PATH=./mint/lib
