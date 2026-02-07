@@ -135,3 +135,5 @@ if [ -f '/Users/tabatakohei/google-cloud-sdk/completion.zsh.inc' ]; then . '/Use
 export PNPM_HOME="/Users/tabatakohei/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+# Claude Code
+export PATH="$HOME/.local/bin:$PATH"
